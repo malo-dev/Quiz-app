@@ -1,0 +1,93 @@
+.form-question,.form-question2{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.paragraphe-question{
+    font-size: 15px;
+    margin-top: 40px;  
+}
+.para {
+    color: #555555;
+}
+.form-question input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+.form-question label{
+    position: relative;
+    bottom: 30px;
+    left: 30px;
+}
+.btn-flex-suivant{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    top: 40px;
+    right: 40px;
+}
+.form-control-question,.paragraphe-question1{
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-flex-suivant input:nth-child(1){
+    border: 1pX solid #EC880C;
+    background: #EC880C;
+    width: 270px;
+    height: 40px;
+}
+.btn-flex-suivant input:nth-child(2),.btn-following-two,
+.btn-following-three,.btn-following-four,.btn-following-five
+,.btn-following-six,.btn-following-seven,.btn-following-eight,.btn-following-nine
+,.btn-following-ten,.btn-following-eleven,.btn-following-thirteen,.btn-following-fourteen
+{
+    border: 1pX solid #028A3D;
+    width: 300px;
+    height: 40px;
+}
+.range-btn {
+    -webkit-appearance: none;     
+    font: inherit;                
+    outline: none;
+    color: #028A3D;
+    opacity: .8;
+    background: #CCC;             
+    box-sizing: border-box;       
+    transition: opacity .2s;
+    cursor: pointer;
+  }
+  #timer{
+      transition-timing-function: linear;
+      background-color: #028A3D;
+      width: 280px;
+      border-radius: 40px;
+      height: 10px;
+      transition-property: width;
+      transition-duration: 60s;
+      transition-timing-function: linear;
+      transition-delay: 1s;
+  }
+  #timer:hover{
+      width: 2px;
+  }
+  #timer-id{
+      position: relative;
+      left: 265px;
+      bottom: 25px;
+      color: #555555;
+      transition-timing-function: linear;
+  }
+  .form1,.form2,.form3,.form4,.form5, .form6,.form7,.form8,.form9, .form10,.form11,.form12,.form13,.form14,.form15{
+      display: none;
+  }
+  #timer2{
+      display: block;
+  }

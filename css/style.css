@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter';
+}
+ body{
+ background-image:linear-gradient(to right,#85F6B8 100% , #8ED9EB 85%);
+ max-width: 100%;
+ max-height: 100%
+}
+.container{  
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    margin-left: 500px;
+    margin-top: 60px;
+    width: 330px;
+    height: 530px;  
+}
+.text-and-title{
+    margin: 40px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.game-title{
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    font-family: 'Inter';
+    color: #555555;
+}
+.text-up-paragraphe{
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: 'Inter';
+    color: #555555;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form-control label{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #555555;
+}
+.form-control input{
+    background: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    height: 36px;
+    box-sizing: border-box;
+}
+
+.form-control input::placeholder{
+    font-size: 10px;
+    margin-right: 20px;
+}
+
+.container-form-error{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF3838;
+    position: relative;
+    bottom: 10px;
+    background: #FFFFFF;
+}
+
+.container-form-success{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 15px;
+    color:  #028A3D;
+    position: relative;
+    bottom:10px;
+  
+}
+.container-form input[type='submit']{
+    background: #028A3D;
+    text-align: center;
+    margin-left: 50px;
+    border: 1px solid #028A3D;
+    Width:200px;
+    Height:50px;
+    color:#FFFFFF;
+}
+@media  screen and (max-width: 372px) {
+
+   .container{
+       margin-left: 20px;
+       margin-top: 10px;         
+   }
+  }
