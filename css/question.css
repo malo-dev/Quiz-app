@@ -75,9 +75,18 @@
       transition-timing-function: linear;
       transition-delay: 1s;
   }
-  #timer:hover{
-      width: 2px;
-  }
+  .timer1{
+    transition-timing-function: linear;
+    background-color: #028A3D;
+    width: 280px;
+    border-radius: 40px;
+    height: 10px;
+    transition-property: width;
+    transition-duration: 60s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
   #timer-id{
       position: relative;
       left: 265px;
