@@ -6,14 +6,17 @@ const timer_id=document.getElementById("timer-id")
 const timer=document.getElementById("timer")
 const Submit=document.querySelector(".container-form input[type='submit']")
 const Submit_button_following=document.querySelector(".btn-flex-suivant input:nth-child(2)")
-const Submit_button_leaving=document.querySelector(".btn-flex-suivant input:nth-child(2)")
+const Submit_button_leaving=document.querySelector(".btn-flex-suivant input:nth-child(1)")
 const btn_home=document.querySelector(".home")
+
 const form =document.querySelector(".form-control")
 const form_container =document.querySelector(".container-form")
 const form_control_field=document.querySelector(".form-control-field")
 const form_question =document.querySelector(".form-question")
 const text_and_title =document.querySelector(".text-and-title")
-const valeur1 = document.querySelectorAll('input[name="contact"]');
+
+
+
 
 let Name=form.name;
 let Email=form.email;
@@ -24,20 +27,46 @@ let sum
 let error_message;
 let success_message;
 let Form_value;
+const uncheced_function =()=>{
+    Submit_button_following.disabled=true
+    input_field[0].checked=false
+    input_field[1].checked=false
+    input_field[2].checked=false
+}
+
+const checked_function =()=>{
+    if( Submit_button_following.disabled=true){
+        input_field[0].onclick=()=>{
+            Submit_button_following.style.opacity="0.9"
+            Submit_button_following.disabled=false
+            }
+            input_field[1].onclick=()=>{
+                Submit_button_following.style.opacity="0.9"
+                Submit_button_following.disabled=false
+             }
+             input_field[2].onclick=()=>{
+                Submit_button_following.style.opacity="0.9"
+                Submit_button_following.disabled=false
+            }
+    }
+}
+
 const timer_bar_progression = () =>{
-    timer.style.width="10px"
+    timer.style.width="250px"
     if( timer.style.width="10px"){
         setInterval(()=>{
             timer.classList.add(".timer2")
-            timer.style.width="10px"
+            timer.style.width="280px"
         })
     }
     
 }
 
 const second_question_form=()=>{
+    uncheced_function()
+    checked_function()
     timer_bar_progression()
-    timer_down_up()
+     timer_down_up()
     paragraphe_question[1].innerHTML="Question 2/15";
     paragraphe_question[0].innerHTML="Quelle est la fonction la mieux déclarée";
     label_field[2].innerHTML="trim())";
@@ -46,7 +75,9 @@ const second_question_form=()=>{
     setInterval(third_question_form,60000) 
 
 }
+
 const third_question_form=()=>{
+ 
     timer_bar_progression()
     timer.style.display="block"
     paragraphe_question[1].innerHTML="Question 3/15";
@@ -186,7 +217,8 @@ const result=()=>{
 
 Submit_button_following.onclick=(e)=>{
     e.preventDefault()
-     second_question_form()
+
+     
 }
 
 
@@ -308,6 +340,13 @@ Email.addEventListener('change',()=>{
             text_and_title.style.display="none"
             form_question.style.display="flex"
             Submit.style.display="none"
+            timer_bar_progression()
+            timer_down_up()
+            checked_function()
+            Submit_button_following.onclick=(e)=>{
+                e.preventDefault()
+                second_question_form()
+            }
         }
        })
 btn_home.addEventListener("click",()=>{
@@ -315,4 +354,3 @@ btn_home.addEventListener("click",()=>{
 
 }) 
 
-form_question.onmouseover=()=>{}

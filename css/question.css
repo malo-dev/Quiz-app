@@ -44,14 +44,12 @@
     width: 270px;
     height: 40px;
 }
-.btn-flex-suivant input:nth-child(2),.btn-following-two,
-.btn-following-three,.btn-following-four,.btn-following-five
-,.btn-following-six,.btn-following-seven,.btn-following-eight,.btn-following-nine
-,.btn-following-ten,.btn-following-eleven,.btn-following-thirteen,.btn-following-fourteen
-{
+
+.btn-flex-suivant input:nth-child(2){
     border: 1pX solid #028A3D;
     width: 300px;
     height: 40px;
+    opacity: 0.5;
 }
 .range-btn {
     -webkit-appearance: none;     
@@ -94,9 +92,9 @@
       color: #555555;
       transition-timing-function: linear;
   }
-  .form1,.form2,.form3,.form4,.form5, .form6,.form7,.form8,.form9, .form10,.form11,.form12,.form13,.form14,.form15{
+  /* .form1,.form2,.form3,.form4,.form5, .form6,.form7,.form8,.form9, .form10,.form11,.form12,.form13,.form14,.form15{
       display: none;
-  }
+  } */
   #timer2{
       display: block;
   }
