@@ -8,14 +8,11 @@ const Submit=document.querySelector(".container-form input[type='submit']")
 const Submit_button_following=document.querySelector(".btn-flex-suivant input:nth-child(2)")
 const Submit_button_leaving=document.querySelector(".btn-flex-suivant input:nth-child(1)")
 const btn_home=document.querySelector(".home")
-
 const form =document.querySelector(".form-control")
 const form_container =document.querySelector(".container-form")
 const form_control_field=document.querySelector(".form-control-field")
 const form_question =document.querySelector(".form-question")
 const text_and_title =document.querySelector(".text-and-title")
-
-
 
 
 let Name=form.name;
@@ -52,33 +49,46 @@ const checked_function =()=>{
 }
 
 const timer_bar_progression = () =>{
-    timer.style.width="250px"
-    if( timer.style.width="10px"){
+    timer.style.width="280px"
+    if(  timer.style.width="280px"){
         setInterval(()=>{
-            timer.classList.add(".timer2")
-            timer.style.width="280px"
-        })
+            timer.style.width="10px"
+        },1000)
+    }if(timer.style.width="10px"){
+        timer.style.width="280px"
     }
+
     
+}
+const first_question_form=()=>{
+        second_question_form()
+        if(label_field[2].checked){
+            console.log(label_field[2].checked)
+            return 1
+        }else{
+            return 0
+        }
+
+        setInterval(second_form,60000)
 }
 
 const second_question_form=()=>{
     uncheced_function() 
     checked_function()
-    timer_bar_progression()
      timer_down_up()
     paragraphe_question[1].innerHTML="Question 2/15";
     paragraphe_question[0].innerHTML="Quelle est la fonction la mieux déclarée";
     label_field[2].innerHTML="trim())";
     label_field[3].innerHTML="trim((()))";
     label_field[4].innerHTML="trim()))";
-    setInterval(third_question_form,60000) 
-    if(label_field[3].checked=true){
+    
+    if(label_field[2].checked=true){
+        console.log(label_field[2].value)
         return 1
-    }else{
-        return 0
     }
+    setInterval(third_question_form,60000) 
 }
+
 
 
 const third_question_form=()=>{
@@ -91,25 +101,25 @@ const third_question_form=()=>{
     label_field[3].innerHTML="javascript xtensible";
     label_field[4].innerHTML="javascript subject xtensible";
     setInterval(fourth_question_form,60000)
-    if(label_field[2].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true || label_field[4].checked){
         return 0
+    }if(label_field[3].checked=true){
+        return 1
     }
 
 }
+
 const fourth_question_form=()=>{
     timer_down_up()
     paragraphe_question[1].innerHTML="Question 4/15";
-    paragraphe_question[0].innerHTML="Quelle est l'objet le mieux déclaré";
     label_field[2].innerHTML="location";
     label_field[3].innerHTML="window()";
     label_field[4].innerHTML="document";
     setInterval(fiefth_question_form,60000)
-    if(label_field[3].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true || label_field[4].checked ){
         return 0
+    }else{
+        return  1
     }
 }
 
@@ -121,10 +131,10 @@ const fiefth_question_form=()=>{
     label_field[3].innerHTML="trim((location())))";
     label_field[4].innerHTML="location.trim()))";
     setInterval(sixth_question_form,60000)
-    if( label_field[3].checked=true){
-        return 1
-    }else{
+    if( label_field[2].checked=true || label_field[4].checked){
         return 0
+    }else{
+        return 1
     }
 
 }
@@ -137,10 +147,10 @@ const sixth_question_form=()=>{
     label_field[3].innerHTML="pop()";
     label_field[4].innerHTML="shift";
     setInterval(seventh_question_form,60000)
-    if( label_field[4].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true || label_field[4].checked){
         return 0
+    }else{
+        return 1
     }
 
 }
@@ -152,10 +162,10 @@ const seventh_question_form=()=>{
     label_field[3].innerHTML="body";
     label_field[4].innerHTML="footer";
     setInterval(eightth_question_form,60000)
-    if(label_field[2].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true || label_field[4].checked){
         return 0
+    }else{
+        return 1
     }
 
 }
@@ -167,10 +177,10 @@ const eightth_question_form=()=>{
     label_field[3].innerHTML="1995";
     label_field[4].innerHTML="1990";
     setInterval(nineth_question_form,60000)
-    if(label_field[3].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true && label_field[4].checked){
         return 0
+    }else{
+        return 1
     }
 
 }
@@ -183,10 +193,10 @@ const nineth_question_form=()=>{
     label_field[3].innerHTML="length";
     label_field[4].innerHTML="map()";
     setInterval(tenth_question_form,60000)
-    if(label_field[4].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true && label_field[4].checked){
         return 0
+    }else{
+        return 1
     }
 
 }
@@ -198,10 +208,10 @@ const tenth_question_form=()=>{
     label_field[3].innerHTML="prop";
     label_field[4].innerHTML="concat";
     setInterval(eleventh_question_form,60000)
-    if(label_field[2].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true && label_field[4].checked){
         return 0
+    }else{
+        return 1
     }
 }
 const eleventh_question_form=()=>{
@@ -212,10 +222,10 @@ const eleventh_question_form=()=>{
     label_field[3].innerHTML="pop(()))";
     label_field[4].innerHTML="push((()))";
     setInterval(twelventh_question_form,60000)
-    if(label_field[4].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true && label_field[4].checked){
         return 0
+    }else{
+        return 1
     }
 
 }
@@ -227,10 +237,10 @@ const twelventh_question_form=()=>{
     label_field[3].innerHTML="string.split('')";
     label_field[4].innerHTML="string.length";
     setInterval(thirteeth_question_form,60000)
-    if(label_field[3].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true && label_field[4].checked){
         return 0
+    }else{
+        return 1
     }
 }
 
@@ -242,10 +252,11 @@ const thirteeth_question_form=()=>{
     label_field[3].innerHTML="open()";
     label_field[4].innerHTML="New malo()";
     setInterval(fourteeth_question_form,60000)
-    if(label_field[4].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true && label_field[4].checked){
+        console.log(label_field[2].checked)
         return 0
+    }else{
+        return 1
     }
 
 }
@@ -257,10 +268,10 @@ const fourteeth_question_form=()=>{
     label_field[3].innerHTML="Faux";
     label_field[4].innerHTML="Aucune bonne réponse";
     setInterval(fiefteeth_question_form,60000)
-    if(label_field[2].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true && label_field[4].checked){
         return 0
+    }if(label_field[3].checked=true ){
+        return 1
     }
 
 }
@@ -273,10 +284,10 @@ const fiefteeth_question_form=()=>{
     label_field[3].innerHTML="Faux";
     label_field[4].innerHTML="Aucune bonne réponse";
     setInterval(result,60000)
-    if(label_field[2].checked=true){
-        return 1
-    }else{
+    if(label_field[2].checked=true && label_field[4].checked){
         return 0
+    }else{
+        return 1
     }
 }
 
@@ -416,12 +427,13 @@ Email.addEventListener('change',()=>{
             checked_function()
             Submit_button_following.onclick=(e)=>{
                 e.preventDefault()
-                second_question_form()
+                first_question_form()
                 if(label_field[3]="trim((()))"){
                     Submit_button_following.style.opacity=0.4
                     Submit_button_following.onclick=(e)=>{
                     e.preventDefault()
                     third_question_form()
+
 
                        if(label_field[3]="javascript xtensible"){
                            uncheced_function()
@@ -507,7 +519,18 @@ Email.addEventListener('change',()=>{
                                                                         e.preventDefault()
                                                                         form_question.style.display="none"
                                                                         document.querySelector(".success-failure-icon").style.display="flex"
+                                                                            
+                                                                        if(sum>7 || sum<15){
+                                                                            cote.innerHTML=sum + "/15"
+                                                                            document.querySelector(".success").style.display="inherit"
+                                                                        }else if(sum>=0 || sum<=7){
+                                                                            cote.innerHTML=sum + "/15"
+                                                                            document.querySelector(".failure").style.display="inherit"
+                                                                        }else{
+                                                                            cote.innerHTML="0/15"
+                                                                            document.querySelector(".failure").style.display="inherit"
                                                                         }
+                                                                    }
                                                                     }
                                                                 }
                                                                 }
@@ -546,4 +569,39 @@ btn_home.addEventListener("click",()=>{
   window.location.href="index.html"
 
 }) 
+Submit_button_leaving.onclick=(e)=>{
+    e.preventDefault()
+    form_question.style.display="none"
+    document.querySelector(".success-failure-icon").style.display="flex"
+    const first_result=first_question_form()
+    const second_result=second_question_form()
+    const third_result=third_question_form()
+    const fourth_result=fourth_question_form()
+    const sixtth_result=sixth_question_form()
+    const seventh_result=seventh_question_form()
+    const eightth_result=eightth_question_form()
+    const nineth_result=nineth_question_form()
+    const tenth_result=tenth_question_form()
+    const eleventh=eleventh_question_form()
+    const twelve_result=twelventh_question_form()
+    const thirteenth_result=thirteeth_question_form()
+    const fourteenth_result=fourteeth_question_form()
+    const fiefteeth_result=fiefteeth_question_form()
+    let sum=first_result+second_result+third_result+fourth_result+sixtth_result+
+            seventh_result+eightth_result+ nineth_result+tenth_result+ eleventh+twelve_result
+            +thirteenth_result+fourteenth_result+ fiefteeth_result
+    
+    if(sum>7 || sum<15){
+        cote.innerHTML=sum + "/15"
+        document.querySelector(".success").style.display="inherit"
+    }else if(sum>=0 || sum<=7){
+        cote.innerHTML=sum + "/15"
+        document.querySelector(".failure").style.display="inherit"
+    }else{
+        cote.innerHTML="0/15"
+        document.querySelector(".failure").style.display="inherit"
+    }
+
+}
+
 
