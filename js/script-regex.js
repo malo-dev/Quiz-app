@@ -63,18 +63,23 @@ const timer_bar_progression = () =>{
 }
 
 const second_question_form=()=>{
-    uncheced_function()
+    uncheced_function() 
     checked_function()
     timer_bar_progression()
      timer_down_up()
     paragraphe_question[1].innerHTML="Question 2/15";
     paragraphe_question[0].innerHTML="Quelle est la fonction la mieux déclarée";
     label_field[2].innerHTML="trim())";
-    label_field[3].innerHTML="trim(()))";
+    label_field[3].innerHTML="trim((()))";
     label_field[4].innerHTML="trim()))";
     setInterval(third_question_form,60000) 
-
+    if(label_field[3].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 }
+
 
 const third_question_form=()=>{
  
@@ -86,6 +91,11 @@ const third_question_form=()=>{
     label_field[3].innerHTML="javascript xtensible";
     label_field[4].innerHTML="javascript subject xtensible";
     setInterval(fourth_question_form,60000)
+    if(label_field[2].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 
 }
 const fourth_question_form=()=>{
@@ -96,6 +106,11 @@ const fourth_question_form=()=>{
     label_field[3].innerHTML="window()";
     label_field[4].innerHTML="document";
     setInterval(fiefth_question_form,60000)
+    if(label_field[3].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 }
 
 const fiefth_question_form=()=>{
@@ -106,6 +121,12 @@ const fiefth_question_form=()=>{
     label_field[3].innerHTML="trim((location())))";
     label_field[4].innerHTML="location.trim()))";
     setInterval(sixth_question_form,60000)
+    if( label_field[3].checked=true){
+        return 1
+    }else{
+        return 0
+    }
+
 }
 
 const sixth_question_form=()=>{
@@ -116,16 +137,26 @@ const sixth_question_form=()=>{
     label_field[3].innerHTML="pop()";
     label_field[4].innerHTML="shift";
     setInterval(seventh_question_form,60000)
+    if( label_field[4].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 
 }
 const seventh_question_form=()=>{
     timer_down_up()
     paragraphe_question[1].innerHTML="Question 7/15";
-    paragraphe_question[0].innerHTML="Quelle est l'unique moyen de devlare une balise script";
+    paragraphe_question[0].innerHTML="Quelle est l'unique moyen de déclarer une balise script";
     label_field[2].innerHTML="head";
     label_field[3].innerHTML="body";
     label_field[4].innerHTML="footer";
     setInterval(eightth_question_form,60000)
+    if(label_field[2].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 
 }
 const eightth_question_form=()=>{
@@ -136,6 +167,11 @@ const eightth_question_form=()=>{
     label_field[3].innerHTML="1995";
     label_field[4].innerHTML="1990";
     setInterval(nineth_question_form,60000)
+    if(label_field[3].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 
 }
 
@@ -147,16 +183,26 @@ const nineth_question_form=()=>{
     label_field[3].innerHTML="length";
     label_field[4].innerHTML="map()";
     setInterval(tenth_question_form,60000)
+    if(label_field[4].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 
 }
 const tenth_question_form=()=>{
     timer_down_up()
     paragraphe_question[1].innerHTML="Question 10/15";
     paragraphe_question[0].innerHTML="Quelle est la propriété js ";
-    label_field[2].innerHTML="pop";
+    label_field[2].innerHTML="random";
     label_field[3].innerHTML="prop";
     label_field[4].innerHTML="concat";
     setInterval(eleventh_question_form,60000)
+    if(label_field[2].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 }
 const eleventh_question_form=()=>{
     timer_down_up()
@@ -166,6 +212,11 @@ const eleventh_question_form=()=>{
     label_field[3].innerHTML="pop(()))";
     label_field[4].innerHTML="push((()))";
     setInterval(twelventh_question_form,60000)
+    if(label_field[4].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 
 }
 const twelventh_question_form=()=>{
@@ -176,6 +227,11 @@ const twelventh_question_form=()=>{
     label_field[3].innerHTML="string.split('')";
     label_field[4].innerHTML="string.length";
     setInterval(thirteeth_question_form,60000)
+    if(label_field[3].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 }
 
 const thirteeth_question_form=()=>{
@@ -186,16 +242,26 @@ const thirteeth_question_form=()=>{
     label_field[3].innerHTML="open()";
     label_field[4].innerHTML="New malo()";
     setInterval(fourteeth_question_form,60000)
+    if(label_field[4].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 
 }
 const fourteeth_question_form=()=>{
     timer_down_up()
     paragraphe_question[1].innerHTML="Question 14/15";
-    paragraphe_question[0].innerHTML="js est un langage informatique utilise sur les objets";
+    paragraphe_question[0].innerHTML="js est un langage informatique utilisé sur les objets";
     label_field[2].innerHTML="Vrai";
     label_field[3].innerHTML="Faux";
     label_field[4].innerHTML="Aucune bonne réponse";
     setInterval(fiefteeth_question_form,60000)
+    if(label_field[2].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 
 }
 
@@ -207,6 +273,11 @@ const fiefteeth_question_form=()=>{
     label_field[3].innerHTML="Faux";
     label_field[4].innerHTML="Aucune bonne réponse";
     setInterval(result,60000)
+    if(label_field[2].checked=true){
+        return 1
+    }else{
+        return 0
+    }
 }
 
 const result=()=>{
@@ -346,6 +417,128 @@ Email.addEventListener('change',()=>{
             Submit_button_following.onclick=(e)=>{
                 e.preventDefault()
                 second_question_form()
+                if(label_field[3]="trim((()))"){
+                    Submit_button_following.style.opacity=0.4
+                    Submit_button_following.onclick=(e)=>{
+                    e.preventDefault()
+                    third_question_form()
+
+                       if(label_field[3]="javascript xtensible"){
+                           uncheced_function()
+                           Submit_button_following.style.opacity=0.4
+                           Submit_button_following.onclick=(e)=>{
+                           e.preventDefault()
+                           fourth_question_form() 
+                           
+                           if(label_field[3]="window()"){
+                            uncheced_function()
+                            Submit_button_following.style.opacity=0.4
+                            Submit_button_following.onclick=(e)=>{
+                            e.preventDefault()
+                            fiefth_question_form() 
+
+                            if(label_field[3]="trim((location())))"){
+                                uncheced_function()
+                                Submit_button_following.style.opacity=0.4
+                                Submit_button_following.onclick=(e)=>{
+                                e.preventDefault()
+                                sixth_question_form()  
+
+                                if(label_field[3]="pop()"){
+                                    uncheced_function()
+                                    Submit_button_following.style.opacity=0.4
+                                    Submit_button_following.onclick=(e)=>{
+                                    e.preventDefault()
+                                    seventh_question_form()
+
+                                    if(label_field[3]="body"){
+                                        uncheced_function()
+                                        Submit_button_following.style.opacity=0.4
+                                        Submit_button_following.onclick=(e)=>{
+                                        e.preventDefault()
+                                        eightth_question_form()
+
+                                        if(label_field[3]="1995"){
+                                            uncheced_function()
+                                            Submit_button_following.style.opacity=0.4
+                                            Submit_button_following.onclick=(e)=>{
+                                            e.preventDefault()
+                                            nineth_question_form()
+                                            if(label_field[3]="length"){
+                                                uncheced_function()
+                                                Submit_button_following.style.opacity=0.4
+                                                Submit_button_following.onclick=(e)=>{
+                                                e.preventDefault()
+                                                tenth_question_form()
+                                                if(label_field[3]="prop"){
+                                                    uncheced_function()
+                                                    Submit_button_following.style.opacity=0.4
+                                                    Submit_button_following.onclick=(e)=>{
+                                                    e.preventDefault()
+                                                    eleventh_question_form()
+                                                    if(label_field[3]="pop(()))"){
+                                                        uncheced_function()
+                                                        Submit_button_following.style.opacity=0.4
+                                                        Submit_button_following.onclick=(e)=>{
+                                                        e.preventDefault()
+                                                        twelventh_question_form()
+                                                        if(label_field[3]="string.split('')"){
+                                                            uncheced_function()
+                                                            Submit_button_following.style.opacity=0.4
+                                                            Submit_button_following.onclick=(e)=>{
+                                                            e.preventDefault()
+                                                            thirteeth_question_form()
+                                                            if(label_field[3]="open()"){
+                                                                uncheced_function()
+                                                                Submit_button_following.style.opacity=0.4
+                                                                Submit_button_following.onclick=(e)=>{
+                                                                e.preventDefault()
+                                                                fourteeth_question_form()
+                                                                if(label_field[3]="Faux"){
+                                                                    uncheced_function()
+                                                                    Submit_button_following.style.opacity=0.4
+                                                                    Submit_button_following.onclick=(e)=>{
+                                                                    e.preventDefault()
+                                                                    fiefteeth_question_form()
+                                                                    if(label_field[3]="Faux"){
+                                                                        uncheced_function()
+                                                                        Submit_button_following.style.opacity=0.4
+                                                                        Submit_button_following.onclick=(e)=>{
+                                                                        e.preventDefault()
+                                                                        form_question.style.display="none"
+                                                                        document.querySelector(".success-failure-icon").style.display="flex"
+                                                                        }
+                                                                    }
+                                                                }
+                                                                }
+                                                            }
+                                                            }
+                                                        }
+                                                        }
+                                                    }
+                                                    }
+                                                }
+                                                }
+                                            }
+                                            }
+
+                                            }  
+                                        }
+                                        
+
+                                     }                                      
+                                    }
+                                 }                                      
+                                }
+
+                            }}}
+                        
+                    
+                        }
+                    }
+                }
+             }               
+            }
             }
         }
        })
